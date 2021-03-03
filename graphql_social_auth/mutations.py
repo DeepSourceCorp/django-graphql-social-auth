@@ -12,7 +12,7 @@ class SocialAuthMutation(mixins.SocialAuthMixin, graphene.Mutation):
 
     class Arguments:
         provider = graphene.String(required=True)
-        access_token = graphene.String(required=True)
+        code = graphene.String(required=True)
 
     @classmethod
     @social_auth

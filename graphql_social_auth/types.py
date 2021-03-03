@@ -22,5 +22,5 @@ class SocialType(DjangoObjectType):
         model = social_models.UserSocialAuth
 
     def resolve_extra_data(self, info, **kwargs):
-        self.extra_data.pop('access_token', None)
+        self.extra_data.pop('code', None)
         return self.extra_data
