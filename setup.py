@@ -34,6 +34,7 @@ setup(
         'django-filter>=1.1.0',
         'graphene-django>=2.0.0',
         'social-auth-app-django>=2.1.0',
+        'django-graphql-jwt @ git+ssh://git@github.com/deepsourcelabs/django-graphql-jwt.git',
     ],
     classifiers=[
         'Development Status :: 4 - Beta',
@@ -65,8 +66,5 @@ setup(
             'locale/*/LC_MESSAGES/django.po',
             'locale/*/LC_MESSAGES/django.mo',
         ],
-    },
-    extras_require={
-        'jwt': ['django-graphql-jwt>=0.1.2'],
-    },
+    }
 )
