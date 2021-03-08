@@ -1,4 +1,5 @@
 import graphene
+from graphql_jwt.decorators import setup_jwt_cookie
 
 from . import mixins, types
 from .decorators import social_auth
@@ -15,6 +16,7 @@ class SocialAuthMutation(mixins.SocialAuthMixin, graphene.Mutation):
         code = graphene.String(required=True)
 
     @classmethod
+    @setup_jwt_cookie
     @social_auth
     def mutate(cls, root, info, social, **kwargs):
         return cls.resolve(root, info, social, **kwargs)
