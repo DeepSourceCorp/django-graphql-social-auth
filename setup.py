@@ -34,7 +34,7 @@ setup(
         'django-filter>=1.1.0',
         'graphene-django>=2.0.0',
         'social-auth-app-django>=2.1.0',
-        'django-graphql-jwt @ git+https://git@github.com/deepsourcelabs/django-graphql-jwt.git@master',
+        'django-graphql-jwt @ git+https://git@github.com/rahul-deepsource/django-graphql-jwt.git@pull-upstream',
     ],
     classifiers=[
         'Development Status :: 4 - Beta',
