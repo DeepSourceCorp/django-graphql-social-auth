@@ -32,7 +32,7 @@ setup(
     install_requires=[
         'Django>=2.0',
         'django-filter>=1.1.0',
-        'graphene-django>=2.0.0',
+        'graphene-django>=2.1.5',
         'social-auth-app-django>=2.1.0',
         'django-graphql-jwt==0.4.0',
     ],
@@ -58,7 +58,7 @@ setup(
     tests_require=[
         'Django>=2.0',
         'django-filter>=1.1.0',
-        'graphene-django>=2.0.0',
+        'graphene-django>=2.1.5',
         'social-auth-app-django>=2.1.0',
     ],
     package_data={
